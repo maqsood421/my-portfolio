@@ -10,7 +10,7 @@ import {
 } from "framer-motion";
 import Image from "next/image";
 import profilepic from "../assets/profilepic.png";
-import obj from "../assets/obj.png";
+import leetcode from "../assets/leetcode.png";
 
 const COLORS_TOP = ["#13FFAA", "#1E67C6", "#CE84CF", "#DD335C"];
 
@@ -51,24 +51,12 @@ const Hero = () => {
         <Image src={profilepic} alt="profile pic" width={250} />
         <div className="flex bg-white/10 shadow-xl p-3 rounded-3xl justify-center items-center space-x-2 mb-4">
           <Image
-            src={obj}
-            alt="object"
+            src={leetcode}
+            alt="leetcode logo"
             width={30}
             className="rounded-2xl mx-auto"
           />
-          <Image
-            src={obj}
-            alt="object"
-            width={30}
-            className="rounded-2xl mx-auto"
-          />
-          <Image
-            src={obj}
-            alt="object"
-            width={30}
-            className="rounded-2xl mx-auto"
-          />
-          <p className="font-medium">xyz ....... </p>
+          <p className="font-medium "> 250+ problems solved </p>
         </div>
 
         <p className="my-4 max-w-xl md:text-medium text-center">
