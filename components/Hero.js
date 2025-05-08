@@ -49,7 +49,7 @@ const Hero = () => {
         </h1>
 
         <Image src={profilepic} alt="profile pic" width={250} />
-        <div className="flex bg-white/10 shadow-xl p-3 rounded-3xl justify-center items-center space-x-2 mb-4">
+        <div className="flex bg-white/10 shadow-xl p-4 rounded-3xl justify-center items-center gap-2 space-x-2 mb-4">
           <Image
             src={leetcode}
             alt="leetcode logo"
