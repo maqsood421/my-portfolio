@@ -3,50 +3,50 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import java from "../assets/java.png";
-import python from "../assets/python.png";
-import git from "../assets/git.png";
-import docker from "../assets/docker.png";
-import github from "../assets/github.png";
+
+import cLogo from "../assets/c.png";
+import cppLogo from "../assets/cpp.png";
+import javaLogo from "../assets/java.png";
+import asmLogo from "../assets/assembly.png";
+import pythonLogo from "../assets/python.png";
 
 const images = [
-  { src: java, alt: "java" },
-  { src: python, alt: "python" },
-  { src: git, alt: "git" },
-  { src: docker, alt: "docker" },
-  { src: github, alt: "github" },
-  { src: java, alt: "java" },
-  { src: python, alt: "python" },
-  { src: git, alt: "git" },
-  { src: docker, alt: "docker" },
-  { src: github, alt: "github" },
-  { src: java, alt: "java" },
-  { src: python, alt: "python" },
-  { src: git, alt: "git" },
-  { src: docker, alt: "docker" },
-  { src: github, alt: "github" },
-  { src: java, alt: "java" },
-  { src: python, alt: "python" },
-  { src: git, alt: "git" },
-  { src: docker, alt: "docker" },
-  { src: github, alt: "github" },
-  { src: java, alt: "java" },
-  { src: python, alt: "python" },
-  { src: git, alt: "git" },
-  { src: docker, alt: "docker" },
-  { src: github, alt: "github" },
-  { src: java, alt: "java" },
-  { src: python, alt: "python" },
-  { src: git, alt: "git" },
-  { src: docker, alt: "docker" },
-  { src: github, alt: "github" },
+  { src: cLogo, alt: "C" },
+  { src: cppLogo, alt: "C++" },
+  { src: javaLogo, alt: "Java" },
+  { src: asmLogo, alt: "Assembly" },
+  { src: pythonLogo, alt: "Python" },
+  // Repeating to make animation longer
+  { src: cLogo, alt: "C" },
+  { src: cppLogo, alt: "C++" },
+  { src: javaLogo, alt: "Java" },
+  { src: asmLogo, alt: "Assembly" },
+  { src: pythonLogo, alt: "Python" },
+  // Repeating to make animation longer
+  { src: cLogo, alt: "C" },
+  { src: cppLogo, alt: "C++" },
+  { src: javaLogo, alt: "Java" },
+  { src: asmLogo, alt: "Assembly" },
+  { src: pythonLogo, alt: "Python" },
+  // Repeating to make animation longer
+  { src: cLogo, alt: "C" },
+  { src: cppLogo, alt: "C++" },
+  { src: javaLogo, alt: "Java" },
+  { src: asmLogo, alt: "Assembly" },
+  { src: pythonLogo, alt: "Python" },
+  // Repeating to make animation longer
+  { src: cLogo, alt: "C" },
+  { src: cppLogo, alt: "C++" },
+  { src: javaLogo, alt: "Java" },
+  { src: asmLogo, alt: "Assembly" },
+  { src: pythonLogo, alt: "Python" }
 ];
 
 const LogoAnimation = () => {
   return (
     <div className="py-8 bg-purple-200/10 opacity-80">
       <div className="container mx-auto">
-        <div className="overflow-hidden [mask-image: linear-gradient(to_right, _transparent, _black_25%, _black_75%, _transparent)]">
+        <div className="overflow-hidden [mask-image:linear-gradient(to_right,_transparent,_black_25%,_black_75%,_transparent)]">
           <motion.div
             className="flex gap-14 flex-none pr-14"
             animate={{

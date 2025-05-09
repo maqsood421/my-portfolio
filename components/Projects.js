@@ -41,7 +41,7 @@ const projects = [
 
 const COLORS_TOP = ["#CE84CF", "#1E67C6", "#DD335C", "#13FFAA"];
 
-const Portfolio = () => {
+const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(projects[0]);
 
   const color = useMotionValue(COLORS_TOP[0]);
@@ -62,8 +62,8 @@ const Portfolio = () => {
       style={{
         backgroundImage
       }}
-      id="portfolio"
-      className="p-32 text-white"
+      id="projects"
+      className="px-4 py-16 sm:px-8 sm:py-20 lg:px-32 lg:py-32 text-white"
     >
       <div className="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-12">
         <div>
@@ -87,12 +87,12 @@ const Portfolio = () => {
               </h3>
 
               {selectedProject.id === project.id && (
-                <>
-                  <div className="border-b-2 border-purple-200 my-4"></div>
-                  <p className="text-gray-400 transition-all duration-500 ease-in-out">
-                    {project.description}
-                  </p>
-                </>
+                <div className="border-b-2 border-purple-200 my-4"></div>
+              )}
+              {selectedProject.id === project.id && (
+                <p className="text-gray-400 transition-all duration-500 ease-in-out">
+                  {project.description}
+                </p>
               )}
             </div>
           ))}
@@ -101,7 +101,7 @@ const Portfolio = () => {
         <Image
           src={selectedProject.image}
           alt={selectedProject.title}
-          className="rounded-xl shadow-lg transition-opacity duration-500 ease-in-out"
+          className="w-full h-auto rounded-xl shadow-lg transition-opacity duration-500 ease-in-out"
           width={800}
           height={450}
         />
@@ -110,4 +110,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default Projects;

@@ -1,5 +1,5 @@
-import { SkillDataProvider } from "../components/sub/skill-data-provider";
-import { SkillText } from "../components/sub/skill-text";
+import { SkillDataProvider } from "./sub/skill-data-provider";
+import { SkillText } from "./sub/skill-text";
 
 import {
   BACKEND_SKILL,
@@ -9,10 +9,10 @@ import {
   SKILL_DATA
 } from "../constants/index";
 
-const Stack = () => {
+const Skills = () => {
   return (
     <section
-      id="stack"
+      id="skills"
       style={{ transform: "scale(0.9)" }}
       className="flex flex-col items-center justify-center gap-3 h-full relative overflow-hidden py-20"
     >
@@ -98,4 +98,4 @@ const Stack = () => {
   );
 };
 
-export default Stack;
+export default Skills;
