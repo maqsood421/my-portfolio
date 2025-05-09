@@ -6,8 +6,8 @@ import { motion } from "framer-motion";
 import {
   slideInFromLeft,
   slideInFromRight,
-  slideInFromTop,
-} from "@/lib/motion";
+  slideInFromTop
+} from "../../lib/motion";
 
 export const SkillText = () => {
   return (
