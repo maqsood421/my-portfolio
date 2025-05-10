@@ -61,7 +61,7 @@ const About = () => {
               <h3 className="text-2xl md:text-3xl font-bold text-white mb-6">
                 Hello, I&apos;m{" "}
                 <span className="text-indigo-400 hover:text-indigo-300 transition-colors duration-300">
-                  Maqsood Dev
+                  Maqsood Ahmed
                 </span>
               </h3>
 
@@ -70,9 +70,9 @@ const About = () => {
                   I&apos;m currently in my 3rd year pursuing a Bachelor&apos;s
                   degree in Computer Science at{" "}
                   <span className="text-indigo-400 text-bold">
-                    Iqra University 
+                    Iqra University Islamabad
                   </span>{" "}
-                  with a CGPA of 3.0/4.0.
+                  with a CGPA of 3.70/4.0.
                 </motion.p>
                 <motion.p variants={itemVariants}>
                   As a passionate full-stack developer, I&apos;ve honed my
