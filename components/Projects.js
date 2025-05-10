@@ -43,7 +43,6 @@ const COLORS_TOP = ["#CE84CF", "#1E67C6", "#DD335C", "#13FFAA"];
 
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(projects[0]);
-
   const color = useMotionValue(COLORS_TOP[0]);
 
   useEffect(() => {
@@ -59,10 +58,12 @@ const Projects = () => {
 
   return (
     <motion.section
-      style={{
-        backgroundImage
-      }}
+      style={{ backgroundImage }}
       id="projects"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+      viewport={{ once: true }}
       className="px-4 py-16 sm:px-8 sm:py-20 lg:px-32 lg:py-32 text-white"
     >
       <div className="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-12">
@@ -90,21 +91,36 @@ const Projects = () => {
                 <div className="border-b-2 border-purple-200 my-4"></div>
               )}
               {selectedProject.id === project.id && (
-                <p className="text-gray-400 transition-all duration-500 ease-in-out">
+                <motion.p
+                  key={project.id}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 0.5 }}
+                  className="text-gray-400"
+                >
                   {project.description}
-                </p>
+                </motion.p>
               )}
             </div>
           ))}
         </div>
 
-        <Image
-          src={selectedProject.image}
-          alt={selectedProject.title}
-          className="w-full h-auto rounded-xl shadow-lg transition-opacity duration-500 ease-in-out"
-          width={800}
-          height={450}
-        />
+        {/* Animated Image */}
+        <motion.div
+          key={selectedProject.id}
+          initial={{ opacity: 0, scale: 0.95 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6 }}
+        >
+          <Image
+            src={selectedProject.image}
+            alt={selectedProject.title}
+            className="w-full h-auto rounded-xl shadow-lg"
+            width={800}
+            height={450}
+            priority
+          />
+        </motion.div>
       </div>
     </motion.section>
   );
