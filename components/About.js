@@ -72,7 +72,7 @@ const About = () => {
                   <span className="text-indigo-400 text-bold">
                     Iqra University 
                   </span>{" "}
-                  with a CGPA of 3.70/4.0.
+                  with a CGPA of 3.0/4.0.
                 </motion.p>
                 <motion.p variants={itemVariants}>
                   As a passionate full-stack developer, I&apos;ve honed my
