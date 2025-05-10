@@ -61,7 +61,7 @@ const About = () => {
               <h3 className="text-2xl md:text-3xl font-bold text-white mb-6">
                 Hello, I&apos;m{" "}
                 <span className="text-indigo-400 hover:text-indigo-300 transition-colors duration-300">
-                  Maqsood Ahmed
+                  Maqsood Dev
                 </span>
               </h3>
 
