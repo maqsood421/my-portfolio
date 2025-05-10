@@ -59,7 +59,7 @@ const About = () => {
               className="md:w-1/2 p-8 md:p-12 flex flex-col justify-center"
             >
               <h3 className="text-2xl md:text-3xl font-bold text-white mb-6">
-                Hello, I'm{" "}
+                Hello, I&apos;m{" "}
                 <span className="text-indigo-400 hover:text-indigo-300 transition-colors duration-300">
                   Maqsood Ahmed
                 </span>
@@ -67,15 +67,15 @@ const About = () => {
 
               <div className="space-y-4 text-gray-300 text-lg">
                 <motion.p variants={itemVariants}>
-                  I'm currently in my 3rd year pursuing a Bachelor's degree in
-                  Computer Science at{" "}
+                  I&apos;m currently in my 3rd year pursuing a Bachelor&apos;s
+                  degree in Computer Science at{" "}
                   <span className="text-indigo-400 text-bold">
                     Iqra University Islamabad
                   </span>{" "}
                   with a CGPA of 3.70/4.0.
                 </motion.p>
                 <motion.p variants={itemVariants}>
-                  As a passionate full-stack developer, I've honed my
+                  As a passionate full-stack developer, I&apos;ve honed my
                   problem-solving skills by solving over 250+ LeetCode problems.
                 </motion.p>
                 <motion.p variants={itemVariants}>
@@ -84,9 +84,9 @@ const About = () => {
                   applications.
                 </motion.p>
                 <motion.p variants={itemVariants}>
-                  I'm constantly exploring new technologies and frameworks to
-                  enhance my skills and create efficient, scalable solutions for
-                  real-world problems.
+                  I&apos;m constantly exploring new technologies and frameworks
+                  to enhance my skills and create efficient, scalable solutions
+                  for real-world problems.
                 </motion.p>
               </div>
             </motion.div>
