@@ -70,7 +70,7 @@ const About = () => {
                   I&apos;m currently in my 3rd year pursuing a Bachelor&apos;s
                   degree in Computer Science at{" "}
                   <span className="text-indigo-400 text-bold">
-                    Iqra University Islamabad
+                    Iqra University 
                   </span>{" "}
                   with a CGPA of 3.70/4.0.
                 </motion.p>
