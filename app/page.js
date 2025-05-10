@@ -6,6 +6,8 @@ import Projects from "../components/Projects";
 import KeyMetrics from "../components/KeyMetrics";
 import StarsCanvas from "../components/StarsCanvas";
 import Contact from "../components/Contact";
+import About from "../components/About";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
@@ -13,11 +15,13 @@ export default function Home() {
       <StarsCanvas />
       <Navbar />
       <Hero />
+      <About />
       <Skills />
       <LogoAnimation />
       <Projects />
       <KeyMetrics />
       <Contact />
+      <Footer />
     </>
   );
 }
