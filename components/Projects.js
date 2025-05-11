@@ -16,27 +16,27 @@ const projects = [
   {
     id: 1,
     year: 2025,
+    title: "Portfolio",
+    image: project3,
+    description:
+      "Developed a personal portfolio using Next.js and Framer Motion to highlight projects, skills, and experience with smooth animations and responsive design. Integrated dynamic theming, interactive sections, and modular components for scalability. Optimized images and performance for fast loading and seamless user experience across devices."
+  },
+  {
+    id: 2,
+    year: 2024,
     title: "IMS-Connect",
     image: project1,
     description:
       "Built a feature-rich innovation management system using the MVC architecture, improving code maintainability and handling a 35% traffic increase. Integrated real-time collaboration via WebSockets, added offline access, and implemented multilingual UI, improving user engagement by 40%."
   },
   {
-    id: 2,
+    id: 3,
     year: 2024,
     title: "MHz Socio",
     image: project2,
     description:
-      "Developed a social platform enabling real-time user interaction and post sharing, with 50% faster authentication response time using token-based security. Implemented end-to-end encryption for user messages, enhancing data security and trust."
-  },
-  {
-    id: 3,
-    year: 2024,
-    title: "Social App Simulator",
-    image: project3,
-    description:
       "Simulated user behavior and engagement metrics in a virtual social media model using OOP and modular design. Achieved 60% accuracy in predicting community growth patterns by modeling complex interactions."
-  }
+  },
 ];
 
 const COLORS_TOP = ["#CE84CF", "#1E67C6", "#DD335C", "#13FFAA"];
