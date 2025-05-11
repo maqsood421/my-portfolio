@@ -117,7 +117,7 @@ const About = () => {
             className="w-full flex justify-center pb-8"
           >
             <Link
-              href="/documents/My_Resume.pdf"
+              href="/documents/Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="px-8 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-full text-white font-medium hover:from-indigo-700 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-indigo-500/30 flex items-center gap-2"
