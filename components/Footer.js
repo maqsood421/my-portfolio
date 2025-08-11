@@ -28,7 +28,7 @@ const Footer = () => {
         {/* Icons */}
         <div className="flex gap-5 text-gray-400">
           <a
-            href="https://github.com/Maqsood421"
+            href="https://github.com/mqxod"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-white transition"

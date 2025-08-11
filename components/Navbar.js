@@ -39,16 +39,8 @@ const Navbar = () => {
       <div className="w-full h-full flex items-center justify-between m-auto px-[10px]">
         {/* Logo + Name */}
         <Link href="#about" className="flex items-center">
-          <Image
-            src="/logo.png"
-            alt="Logo"
-            width={70}
-            height={70}
-            draggable={false}
-            className="cursor-pointer"
-          />
           <div className="hidden text-2xl font-bold md:flex md:selffont-bold ml-[10px] text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
-            Maqsood Dev
+            MA
           </div>
         </Link>
 
