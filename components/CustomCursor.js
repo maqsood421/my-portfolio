@@ -18,7 +18,7 @@ export default function CustomCursor() {
     };
 
     const animate = () => {
-      cursorX += (mouseX - cursorX) * 0.15; // smooth trailing
+      cursorX += (mouseX - cursorX) * 0.15;
       cursorY += (mouseY - cursorY) * 0.15;
       setPos({ x: cursorX, y: cursorY });
       requestAnimationFrame(animate);
@@ -27,7 +27,7 @@ export default function CustomCursor() {
     window.addEventListener("mousemove", moveCursor);
     animate();
 
-    // Hover effect on clickable items
+    // Hover effect for clickable elements
     const handleMouseOver = (e) => {
       if (e.target.closest("a, button, .clickable")) {
         setIsHovering(true);
@@ -56,17 +56,15 @@ export default function CustomCursor() {
         top: pos.y,
         left: pos.x,
         transform: "translate(-50%, -50%)",
-        width: isHovering ? "50px" : "35px",
-        height: isHovering ? "50px" : "35px",
+        width: isHovering ? "80px" : "35px",
+        height: isHovering ? "80px" : "35px",
         borderRadius: "50%",
-        background:
-          "conic-gradient(from 0deg, #00f, #0ff, #0f0, #ff0, #f0f, #00f)",
-        backgroundSize: "200% 200%",
-        animation: "spin 2s linear infinite, pulse 1.5s ease-in-out infinite",
-        boxShadow: "0 0 20px rgba(0, 255, 255, 0.8)",
+        border: "2px solid rgba(0, 255, 255, 0.8)",
+        boxShadow: "0 0 15px rgba(0, 255, 255, 0.6)",
         pointerEvents: "none",
         zIndex: 9999,
-        transition: "width 0.2s ease, height 0.2s ease, transform 0.1s linear"
+        transition: "width 0.2s ease, height 0.2s ease, transform 0.1s linear",
+        background: "transparent"
       }}
     />
   );
