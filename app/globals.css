@@ -6,6 +6,17 @@
 body {
   color: #ededed;
   background: #0a0a0a;
+  cursor: none;
+}
+
+@keyframes spin {
+  0% { filter: hue-rotate(0deg); }
+  100% { filter: hue-rotate(360deg); }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.15); }
 }
 
 .bg-circle-container {

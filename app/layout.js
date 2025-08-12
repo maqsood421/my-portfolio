@@ -1,5 +1,6 @@
 import "./globals.css";
 import { Poppins } from "next/font/google";
+import CustomCursor from "../components/CustomCursor";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -16,7 +17,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head />
-      <body className={`${poppins.className} antialiased`}>{children}</body>
+      <body className={`${poppins.className} antialiased`}>
+        <CustomCursor />
+        {children}
+      </body>
     </html>
   );
 }
